@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+	<!-- Google Font -->
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">
+
+	<!-------->
+
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+			-webkit-box-sizing: border-box;
+			box-sizing: border-box;
+		}
+
+
+		.navMenu {
+			font-family: 'Advent Pro', sans-serif;
+			padding: 8px;
+			text-align: center;
+			margin: 7px auto;
+			width: fit-content;
+		}
+
+		.navMenu a {
+			color: #272727;
+			text-decoration: none;
+			text-transform: uppercase;
+			display: inline-block;
+			padding: 6px;
+		}
+
+		.background {
+			background-color: #ece5f0;
+		}
+
+		.border {
+			border: 1px solid #cccccc;
+
+		}
+
+		.navMenu a:hover {
+
+			color: #d09c0b;
+		}
+	</style>
+</head>
+
+<body>
+
+	<nav class="navMenu  border">
+		<a id="home" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-house"></i>Home</a>
+		<a id="client-documents" onclick="navigate(this.id)" href="#"> <i class=""></i>Client Documents</a>
+		<a id="design" onclick="navigate(this.id)" href="#"> <i class=""></i>Design</a>	
+		<a id="strategy" onclick="navigate(this.id)" href="#"> <i class=""></i>Strategy</a>
+		<a id="content" onclick="navigate(this.id)" href="#"> <i class=""></i>Content</a>
+		<a id="development" onclick="navigate(this.id)" href="#"> <i class=""></i>Development</a>
+		<a id="style-guide" onclick="navigate(this.id)" href="#"> <i class=""></i>Style Guide</a>
+
+	</nav>
+
+
+	<script>
+
+		let direction = "horizontal";
+		if (direction === "vertical") {
+			document.head.insertAdjacentHTML("beforeend", `<style>.navMenu a {display: block; text-align:left; margin:7px} i{width:15px; margin-right:5px} .navMenu{margin:3px}</style>`)
+		}
+
+
+		function navigate(id) {
+
+			if (id == 'home')
+				window.open("https://www.notion.so/Project-Name-Dashboard-4ee39b45ec0142adb8f7653097d735e4", '_blank').focus();
+			else if (id == 'client-documents')
+				window.open("https://www.notion.so/Client-Documents-2ae0681d183b412e9323111a04f5b88c", '_blank').focus();
+			else if (id == 'design')
+				window.open("https://www.notion.so/Design-0b13ab6503034086b4bee6eed6268bc1", '_blank').focus();
+			else if (id == 'strategy')
+				window.open("https://www.notion.so/Strategy-5b410dfb36e94c408a34a864edf974cc", '_blank').focus();
+			else if (id == 'content')
+				window.open("https://www.notion.so/Content-53a47fe262f148418bbcfbf26fd06209", '_blank').focus();
+			else if (id == 'development)
+				window.open("https://www.notion.so/Development-a4637671ed1e4918bd21c47142624f30", '_blank').focus();
+			else if (id == 'development)
+				window.open("https://www.notion.so/Development-a4637671ed1e4918bd21c47142624f30", '_blank').focus();
+
+
+
+		}
+	</script>
+
+
+</body>
+
+</html>
